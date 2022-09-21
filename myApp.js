@@ -1,6 +1,7 @@
 let express = require('express');
 let app = express();
 let bodyParser = require('body-parser');
+let validator = require('validator');
 // const upper_case = process.env['MESSAGE_STYLE'];
 //let the_variable = process.env.MESSAGE_STYLE;
 //console.log("value of environment var: ",upper_case);
