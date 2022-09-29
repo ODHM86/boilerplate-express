@@ -1,7 +1,7 @@
 let express = require('express');
 let app = express();
 let bodyParser = require('body-parser');
-let validator = require('validator');
+
 // const upper_case = process.env['MESSAGE_STYLE'];
 //let the_variable = process.env.MESSAGE_STYLE;
 //console.log("value of environment var: ",upper_case);
@@ -68,6 +68,7 @@ app.use('/:word/echo',function(req,res,next){
 });
 
 app.route('/name').get(function(req,res,next){
+ 
   var user_json = {"name":req.query.first +" "+ req.query.last};
   console.log(req.query)
   res.json(user_json);
